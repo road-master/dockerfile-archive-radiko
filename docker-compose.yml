@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  archive-radiko:
+    build:
+      context: .
+      target: production
+    entrypoint: sh
+    image: mstmelody/archive-radiko:latest
+    tty: yes
+    volumes:
+      - .:/workspace
+      - ./output:/workspace/output

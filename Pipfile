@@ -1,0 +1,31 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+bump2version = "*"
+# Hotfix for Pipenv's Bug @see https://github.com/pypa/pipenv/issues/4101
+colorama = "*"
+coverage = "*"
+flake8 = "*"
+invoke = "*"
+isort = "*"
+mypy = "*"
+# To graduate discussion about detailed code style of Python
+pipenv-setup = "*"
+pylint = "*"
+# To test
+pytest = "*"
+radon = "*"
+xenon = "*"
+
+[packages]
+# To control ffmpeg by Python
+ffmpeg-python = "*"
+# To intaract with radiko API to get media playlist
+radikoplaylist = "*"
+
+[scripts]
+format = "black -i --recursive src/time_free_app.py src/radiko/"
+check_format = "black --diff --recursive src/time_free_app.py src/radiko/"
