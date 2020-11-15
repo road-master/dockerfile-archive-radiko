@@ -4,7 +4,7 @@ services:
     build:
       context: .
       target: production
-    entrypoint: sh
+    entrypoint: bash
     image: mstmelody/archive-radiko:latest
     tty: yes
     volumes:

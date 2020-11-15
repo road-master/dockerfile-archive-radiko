@@ -47,7 +47,7 @@ python3 archive.py <放送局ID> <放送開始時刻> <放送終了時刻> <ア�
 例:
 
 ```console
-docker run -it --rm --volume $(pwd):/workspace/output --env RADIKO_AREA_ID=JP4 --entrypoint=sh mstmelody/archive-radiko
+docker run -it --rm --volume $(pwd):/workspace/output --env RADIKO_AREA_ID=JP4 --entrypoint=bash mstmelody/archive-radiko
 ```
 
 ```console
@@ -64,7 +64,7 @@ python3 archive.py FMT 20201102193000 20201102215500 "NEWS NEWS"
 version: "3.8"
 services:
   archive-radiko:
-    entrypoint: sh
+    entrypoint: bash
     environment:
       RADIKO_AREA_ID: <放送局ID>
     image: mstmelody/archive-radiko
@@ -79,7 +79,7 @@ services:
 version: "3.8"
 services:
   archive-radiko:
-    entrypoint: sh
+    entrypoint: bash
     environment:
       RADIKO_AREA_ID: JP4
     image: mstmelody/archive-radiko
