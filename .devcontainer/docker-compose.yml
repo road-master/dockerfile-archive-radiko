@@ -18,6 +18,7 @@ services:
     #
     build:
       target: development
+    entrypoint: []
     image: mstmelody/archive-radiko:development
 
     volumes:
