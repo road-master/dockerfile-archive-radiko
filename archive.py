@@ -34,6 +34,6 @@ if __name__ == "__main__":
                   f'program name: {program}, '
                   f'start: {start}, '
                   f'end: {end}')
-    out_file_name = f'./output/{start}_{station}_{program}.aac'
+    out_file_name = f'./output/{start}_{station}_{program}.m4a'
     logging.debug(f'out file name:{out_file_name}')
     record_time_free(station, out_file_name, start, end, timeout)
